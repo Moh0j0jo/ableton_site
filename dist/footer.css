@@ -1,0 +1,217 @@
+footer {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+footer >.footerTitle  {
+  font-size: 4em;
+  font-weight: 600;
+  display: flex;
+  flex-flow: row;
+}
+
+.footer_upper, .footer_midle {
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 250px;
+
+}
+
+.social > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 50px;
+}
+
+.social > ul > li {
+  align-items: center;
+  border-radius: 5px;
+}
+.social > ul > li:nth-child(1) {
+  background-color: #3477f2;
+}
+
+.social > ul > li:nth-child(2) {
+  background-color: #3477f2;
+}
+
+.social > ul > li:nth-child(3) {
+  background-color: #ff001d;
+}
+
+.social > ul > li:nth-child(4) {
+  background-color: #ff764d;
+}
+
+
+.footer_upper > .footer_upper_containerB p:first-child, .footer_upper_containerC p:first-child {
+  font-weight: bold;
+}
+
+.footer_upper >.footer_upper_containerA, .footer_upper > .footer_upper > .footer_upper_containerB,
+.footer_upper_containerC {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer_upper >.footer_upper_containerC {
+  gap: 20px;
+}
+
+.footer_upper > .footer_upper_containerC > form {
+  display: grid;
+  grid-template-columns: 300px 100px;
+}
+
+.footer_upper > .footer_upper_containerC > form > input[type=email] {
+  background-color: #eee;
+}
+
+.footer_upper > .footer_upper_containerC > form > input,textarea {
+  color: #979595;
+  padding-left: 20px
+}
+
+
+.footer_upper > .footer_upper_containerC > form > button {
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: var(--cp6);
+  border-radius: 2px;
+}
+
+.footer_midle > .footer_upper_containerA > ul > li:first-child, .footer_upper_containerB p:first-child, .footer_upper_containerC p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer_midle > .footer_upper_containerC > .dropdown {
+  width: 300px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px
+}
+
+
+.footer_midle > .footer_upper_containerC > .dropdown select {
+  width: 150px;
+  height: 30px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 12px;
+  background-image:url(/src/pictures/arrow.png);
+  background-size: 1em;
+  background-repeat: no-repeat;
+  background-position: 90% 50% ;
+  padding: 4px 0 0 0;
+  font-size:14px;
+  text-indent: 10px;
+}
+
+.footer_botom {
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer_botom > .footer_botom_list {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer_botom > .footer_botom_list > li:nth-child(8) {
+  position: absolute;
+  right: 0px;
+}
+
+.footer_botom > .footer_botom_list > li:nth-child(7) {
+  position: absolute;
+  right: 100px;
+}
+
+.footer_botom > .footer_botom_list > li > svg {
+  width: 60px;
+  height: 28px;
+}
+
+@media screen and (max-width: 800px) {
+
+  footer {
+    gap: 20px;
+    margin: 10px auto 0;
+  }
+
+  .footer_upper, .footer_midle{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  
+  }
+  
+  .footer_botom {
+    width: 90vw;
+    padding-bottom: 50px
+  }
+  
+  .footer_botom > .footer_botom_list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: relative;
+  
+  }
+
+  .footer_botom > .footer_botom_list > li {
+    text-align: center;
+  }
+
+  .footer_botom > .footer_botom_list > li:nth-child(8) {
+    position: relative;
+    bottom: -10px;
+    right: 0px;
+  }
+  
+  .footer_botom > .footer_botom_list > li:nth-child(7) {
+    position: relative;
+    bottom: -10px;
+    left: 0px;
+  }
+
+
+  .footer_upper_containerA, .footer_upper_containerB,
+  .footer_upper_containerC {
+    width: 100vw;
+  }
+
+  .footer_upper > .footer_upper_containerC > p {
+    width: 250px;
+  }
+
+  .footer_upper > .footer_upper_containerC > form {
+    display: grid;
+    grid-template-columns: 200px 100px;
+  }
+  
+  
+}
